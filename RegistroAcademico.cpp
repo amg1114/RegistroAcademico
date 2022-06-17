@@ -2,9 +2,10 @@
 #include <vector>
 
 #include "Estudiante.h"
+#include "DB.h"
 
 using namespace std;
-
+DB data_base;
 vector <Estudiante> lista_estudiantes;
 
 /* --------- Defincion de Prototipos de Funcion --------- */
@@ -22,7 +23,8 @@ void crearEstudiante()
 	new_estudiante.setNombre("Estudiante");
 	new_estudiante.setCodigo();
 
-	lista_estudiantes.push_back(new_estudiante);
+	data_base.guardarEstudiante(new_estudiante);
+	data_base.importarEstudiantes(lista_estudiantes);
 }
 
 void imprimirEstudiantes()
@@ -47,6 +49,7 @@ void imprimirEstudiantes()
 int main() {
 	crearEstudiante();
 	imprimirEstudiantes();
+	
 	return 0;
 }
 
