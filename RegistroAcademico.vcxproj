@@ -139,14 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Asignatura.cpp" />
     <ClCompile Include="DB.cpp" />
     <ClCompile Include="Estudiante.cpp" />
+    <ClCompile Include="ProgramaAcademico.cpp" />
     <ClCompile Include="RegistroAcademico.cpp" />
+    <ClCompile Include="Semestre.cpp" />
     <ClCompile Include="Usuario.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Asignatura.h" />
     <ClInclude Include="DB.h" />
     <ClInclude Include="Estudiante.h" />
+    <ClInclude Include="ProgramaAcademico.h" />
+    <ClInclude Include="Semestre.h" />
     <ClInclude Include="Usuario.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

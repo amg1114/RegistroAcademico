@@ -47,9 +47,8 @@ void imprimirEstudiantes()
 }
 
 int main() {
-	crearEstudiante();
+	data_base.importarEstudiantes(lista_estudiantes);
 	imprimirEstudiantes();
-	
 	return 0;
 }
 
