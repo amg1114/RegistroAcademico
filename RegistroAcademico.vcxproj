@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Asignatura.cpp" />
     <ClCompile Include="DB.cpp" />
+    <ClCompile Include="Docente.cpp" />
     <ClCompile Include="Estudiante.cpp" />
     <ClCompile Include="ProgramaAcademico.cpp" />
     <ClCompile Include="RegistroAcademico.cpp" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="Asignatura.h" />
     <ClInclude Include="DB.h" />
+    <ClInclude Include="Docente.h" />
     <ClInclude Include="Estudiante.h" />
     <ClInclude Include="ProgramaAcademico.h" />
     <ClInclude Include="Semestre.h" />

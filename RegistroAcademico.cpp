@@ -1,12 +1,21 @@
 #include <iostream>
 #include <vector>
 
-#include "Estudiante.h"
 #include "DB.h"
+#include "ProgramaAcademico.h"
+#include "Semestre.h"
+#include "Asignatura.h"
+#include "Estudiante.h"
+#include "Docente.h"
 
 using namespace std;
+
 DB data_base;
+
+vector <Asignatura> pensum_carreras;
+vector <Asignatura> lista_asignaturas;
 vector <Estudiante> lista_estudiantes;
+vector <Docente> lista_docenetes;
 
 /* --------- Defincion de Prototipos de Funcion --------- */
 void crearEstudiante();
@@ -49,6 +58,9 @@ void imprimirEstudiantes()
 int main() {
 	data_base.importarEstudiantes(lista_estudiantes);
 	imprimirEstudiantes();
+
+	Asignatura new_asignatura("100-1", 1, 1, "100000-1", "1006493470-1", 1, "Calculo");
+	data_base.guardarAsignatura(new_asignatura, "pensum");
 	return 0;
 }
 

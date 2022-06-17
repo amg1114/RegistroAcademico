@@ -7,33 +7,34 @@ class Asignatura
 {
 public:
 	Asignatura();
+	Asignatura(string, int, int, string, string, int, string);
 	virtual ~Asignatura();
 
 	void setCodigo(int);
 	void setCantCreditos(int);
-	void setPrograma(int);
-	void setSemestre(int);
-	void setEstudiante(int);
-	void setDocente(int);
+	void setCodigoPrograma(int);
+	void setCodigoSemestre(int);
+	void setCodigoEstudiante(int);
+	void setCodigoDocente(int);
 	void setNombre(string);
 
-	int getCodigo();
-	int getPrograma();
-	int getSemestre();
+	string getCodigo();
+	int getCodigoPrograma();
+	int getCodigoSemestre();
 	int getCantCreditos();
-	int getEstudiante();
-	string getDocente();
+	string getCodigoEstudiante();
+	string getCodigoDocente();
 	string getNombre();
 protected:
-
-private:
-	int codigo;
+	string codigo;
 	int codigo_programa;
 	int codigo_semestre;
-	int codigo_estudiante;
+	string codigo_estudiante;
 	string codigo_docente;
 	int cantCreditos;
 	string nombre;
+private:
+
 };
 
 #endif // ASIGNATURA_H
